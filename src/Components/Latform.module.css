@@ -1,0 +1,54 @@
+.form {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form > .header {
+  background-color: #ffde4d;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.lat,
+.lon,
+.dta {
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 300px;
+  padding: 20px;
+  display: block;
+  border: 2px solid rgb(236, 229, 229);
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.lat:focus {
+  outline: none;
+}
+
+.lon:focus {
+  outline: none;
+}
+
+.btn_fetch {
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 340px;
+  padding: 20px;
+  display: block;
+  border: 2px solid rgb(236, 229, 229);
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #16204e;
+  cursor: pointer;
+}

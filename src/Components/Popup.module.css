@@ -1,0 +1,242 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ffde4d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+#time_zone {
+  text-align: center;
+  color: #333;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal2 {
+  display: block; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Modal Content/Box */
+.modal_content {
+  background: linear-gradient(145deg, #141414, #191818);
+  margin: 10% auto;
+  padding: 0;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/*img1 */
+.img1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 20;
+  margin-top: 50px;
+  border-radius: 50%;
+  /*box-shadow: 1px -80px 44px 5px rgba(236, 255, 16, 0.97);*/
+  box-shadow: 1px -77px 48px 20px rgba(253, 249, 42, 0.63);
+  animation: slideIn 2s ease-in-out;
+}
+
+.test {
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  animation: fadeIn 5s ease-in-out;
+}
+
+.test2 {
+  position: relative;
+  right: 20;
+  left: 20;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  animation: fadeIn 5s ease-in-out;
+  text-wrap: nowrap;
+}
+
+/*img1 */
+.img2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 10;
+  border-radius: 50%;
+  /*box-shadow: -2px 67px 50px 5px rgba(244, 247, 22, 0.77);*/
+  box-shadow: 1px 74px 44px 5px rgba(236, 255, 16, 0.69);
+  animation: slideOut 2s ease-in-out;
+}
+
+/* Modal Header */
+.modal_header {
+  padding: 20px;
+  background-color: #ffde4d;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_header h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Close Button */
+.close_btn {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close_btn:hover {
+  color: #ff0000;
+}
+
+/* Modal Body */
+.modal_body {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftcontainer {
+  position: relative;
+  align-items: flex-end;
+}
+
+.rightcontainer {
+  position: relative;
+  align-items: flex-start;
+}
+
+/* Modal Footer */
+.modal_footer {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .modal_body {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftcontainer {
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 10%;
+    align-items: center;
+  }
+  .rightcontainer {
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
